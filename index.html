@@ -6,11 +6,25 @@
     <title>20-Plug in</title>
     <link rel="icon" href="images/icon.png">
     <!-- CSS Link -->
+    <link rel="stylesheet" href="vendor/wow-js/css/animate.css">
+    <link rel="stylesheet" href="vendor/aos-js/aos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
   </head>
   <body>
+
+    <!-- preloader start -->
+    <div id="loading">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object" id="object_one"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_three"></div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader end  -->
 
     <!-- Navbar start -->
 
@@ -26,7 +40,7 @@
               <div class="collapse navbar-collapse h_nav_coll" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 h_nav_ul">
                   <li class="nav-item">
-                    <a class="nav-link" href="https://sanaulhawk01.github.io/20-plugin-page1/">Page 1</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Page 1</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://sanaulhawk01.github.io/20-plugin-page2/">Page 2</a>
@@ -38,7 +52,7 @@
                     <a class="nav-link" href="https://sanaulhawk01.github.io/20-plugin-page4/">Page 4</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Page 5</a>
+                    <a class="nav-link" href="https://sanaulhawk01.github.io/20-plugin-page5/">Page 5</a>
                   </li>
                 </ul>
               </div>
@@ -49,8 +63,189 @@
     </header>
 
     <!-- Navbar end -->
-    
-    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- Mixitup -->
+
+    <section class="mixitup">
+      <div class="container">
+        <div class="title">
+          <h1>Mixitup</h1>
+        </div>
+        <div class="mxt_content">
+          <div class="row mt-4">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <a data-filter="all" class="btn btn-primary">All</a>
+                <a data-filter=".wd" class="btn btn-primary">Web design</a>
+                <a data-filter="none" class="btn btn-primary">Copywriting</a>
+                <a data-filter=".seo" class="btn btn-primary">SEO</a>
+                <a data-filter=".ui" class="btn btn-primary">UI/UX</a>
+                <a data-filter=".ve" class="btn btn-primary">video editing</a>
+                <!-- Ascending,Descending -->
+                <a data-sort="order:asc" class="btn btn-dark">Asc</a>
+                <a data-sort="order:descending" class="btn btn-dark">Descending</a>
+                <a data-sort="random" class="btn btn-dark">Random</a>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="mxt">
+            <div class="col-lg-3 mt-3 mix wd" data-order="1">
+              <div class="mxt_text">
+                <h2>Web design</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                <a href="#" class="btn btn-primary mxt_btn">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 mix seo" data-order="2">
+              <div class="mxt_text">
+                <h2>SEO</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                <a href="#" class="btn btn-primary mxt_btn">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 mix wd ui" data-order="3">
+              <div class="mxt_text">
+                <h2>UI/UX</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                <a href="#" class="btn btn-primary mxt_btn">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 mix ve" data-order="4">
+              <div class="mxt_text">
+                <h2>video editing</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                <a href="#" class="btn btn-primary mxt_btn">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 mix wd" data-order="5">
+              <div class="mxt_text">
+                <h2>Web design (2)</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                <a href="#" class="btn btn-primary mxt_btn">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 mix seo" data-order="6">
+              <div class="mxt_text">
+                <h2>SEO (2)</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                <a href="#" class="btn btn-primary mxt_btn">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 mix ui" data-order="7">
+              <div class="mxt_text">
+                <h2>UI/UX (2)</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                <a href="#" class="btn btn-primary mxt_btn">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 mix ve" data-order="8">
+              <div class="mxt_text">
+                <h2>video editing (2)</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+                <a href="#" class="btn btn-primary mxt_btn">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter-->
+
+    <section class="counter_">
+      <div class="container">
+        <div class="counter_contents text-center">
+          <div class="title">
+            <h1>Counter Up</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <h2>Websites Designed</h2>
+              <h4 class="counter">70</h4>
+            </div>
+            <div class="col-lg-4">
+              <h2>Earn Money</h2>
+              <h4 class="counter">43,000</h4>
+            </div>
+            <div class="col-lg-4">
+              <h2>Work Experience</h2>
+              <h4 class="counter">2015.2025</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Animation -->
+
+    <section class="animation">
+      <div class="container">
+        <div class="animation_contents">
+          <div class="title">
+            <h1>WOW-Animation</h1>
+          </div>
+          <div class="wow_content">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="wow bounceInLeft wow_item" data-wow-duration="3s">
+                  <h4>(1) What is Lorem Ipsum?</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="wow flip wow_item" data-wow-duration="1.5s">
+                  <h4>(2) Why do we use it?</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="wow bounceInRight wow_item" data-wow-duration="3s">
+                  <h4>(3) Where does it come from?</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="title">
+            <h1>AOS-Animation</h1>
+          </div>
+          <div class="aos_content">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="aos_item" data-aos="zoom-out-right">
+                  <h4>(1) What is Lorem Ipsum?</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="aos_item" data-aos="zoom-out-down">
+                  <h4>(2) Why do we use it?</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="aos_item" data-aos="zoom-out-left">
+                  <h4>(3) Where does it come from?</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="vendor/mixitup/js/mixitup.min.js"></script>
+    <script src="vendor/counter-up/js/waypoints.min.js"></script>
+    <script src="vendor/counter-up/js/jquery.counterup.min.js"></script>
+    <script src="vendor/wow-js/js/wow.min.js"></script>
+    <script src="vendor/aos-js/aos.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
